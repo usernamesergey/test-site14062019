@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
+html,body{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+}
+body{
+    max-width: 1920px;
+}
+img{
+    max-width: 100%;
+}
+.indent{
+    padding: 0 3%;
+}
+a:hover{
+    text-decoration: none;
+}
+.label{
+    font-size: 0.8rem;
+    position: absolute;
+    top: -9px;
+    padding: 0 7px;
+    background: #fff;
+    left: 30px;
+}
+.calc [type=date], .calc [type=text], .slider-value{
+    border: 1px solid #B0B0B0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 15px 20px;
+}
+.calc__date{
+    width: 244px;
+}
+.calc label{
+    position: relative;
+}
+input:focus{
+    outline: none;
+    border: none;
+}
+input.error{
+    border: 2px solid #FE0000 !important;
+}
+.error{
+    font-size: 0.8rem;
+    color: #FF0000;
+}
+.properly{
+    border: 2px solid #93C950;
+}
+.calc__insurance{
+    margin-bottom: 40px;
+}
+.calc__btn, .calc__btn:focus{
+    background: #93C950;
+    width: 300px;
+    text-align: center;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    background: #93C950;
+    border: 1px solid #93C950;
+    box-sizing: border-box;
+    border-radius: 49px;
+    color: #fff;
+}
+
+
+.button-label {
+    position: relative;
+    display: block;
+    width: 105px;
+    height: 38px;
+    padding: 15px;
+    border-radius: 50px;
+    line-height: 10px;
+    cursor: pointer;
+    border: 1px solid #B0B0B0;
+  }
+  .button-label::before {
+    content: "Нет";
+    position: absolute;
+    right: 15px;
+    color: #000;
+  }
+  .button-label::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 3px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background:#C4C4C4;
+    transition: .5s;
+  }
+  .button-checkbox{
+      display: none;
+  }
+  .button-checkbox:checked ~ .button-label:after {
+    left: 63px;
+  }
+  .button-checkbox:checked ~ label{
+    border: 1px solid #93C950;;
+  }
+  .button-checkbox:checked ~ label::after{
+    background: #93C950;;
+  }

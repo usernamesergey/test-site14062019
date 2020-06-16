@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+        <meta charset="utf-8">
+        <title> Тестовое задание </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/jquery-ui.css">
+        <link rel="stylesheet" href="./assets/css/additional.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+    </head>
+    <body>
+        <div class="container-fluide">
+            <header class="header indent">
+                <div class="row">
+                    <div class="header__contacts col-4">
+                        <div class="row">
+                            <div class="col-sm-5 header__logo">
+                                <img src="./assets/img/header/logo.png" alt="Логотип">
+                            </div>
+                            <div class="col-sm-6 header__phone">
+                                <a href="tel:88007070779" class="header__number">8 (800) 707-07-79</a>
+                                <span class="header__number-text">Горячая линия</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__nav col-6">
+                        <nav>
+                            <a href="#">Частным лицам</a>
+                            <a href="#">Корпоративным клиентам</a>
+                            <a href="#">Партнерам</a>
+                            <a href="#">О компании</a>
+                            <a href="#">Контакты</a>
+                        </nav>
+                    </div>
+                    <div class="header__buttons col-2">
+                        <div class="header__square"></div>
+                        <a href="#" class="header__search"></a>
+                        <a href="#" class="header__button">Страховой случай</a>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="breadcrumbs">
+                            <a class="breadcrumbs__item" href="#">Главная</a>	
+                            <span>&#62;</span>
+                            <a href="#" class="breadcrumbs__item">Ипотека страхование</a>
+                        </div>
+                        <h1>Ипотечное страхование</h1>
+                        <h5>Расчет стоимости полиса </h5>
+                        <form action="/" method="post" class="calc">
+                            <div class="row calc__dates">
+                                <div class="col-6">
+                                    <label><span class="label">Дата начала</span><input class="calc__date" name="start" type="date"></label>
+                                </div>
+                                <div class="col-6">
+                                    <label><span class="label">Дата окончания</span><input class="calc__date" name="stop" type="date"></label>
+                                </div>
+                            </div>
+                            <div class="row calc__creditor">
+                                <div class="col-12">
+                                    <label for="сreditor" class="calc__label-creditor">
+                                        Кредитор
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        РНКБ</label>
+                                    <input name="сreditor" type="text" id="сreditor" class="calc__input-creditor">
+                                </div>
+                            </div>
+                            <div class="row calc__insurance">
+                                <div class="col-12">
+                                    <label for="insurance" class="calc__label-insurance">Объект страхования</label>
+                                    <input name="insurance" type="text" id="insurance" class="calc__input-insurance">
+                                </div>
+                            </div>
+                            <div class="row year-construction">
+                                <div class="col-5 construction__flex">
+                                    <label><span class="label">Год постройки</span><input class="calc__date year-construction__date" name="construction" type="date"></label>
+                                </div>
+                                <div class="col-7 construction__flex">
+                                    <div class="checkbox">
+                                        <input name="demolition" type="checkbox" id="payt1" class="button-checkbox"/>
+                                        <label class="button-label" for="payt1">Да</label></label>
+                                    </div>
+                                   &nbsp; &nbsp; &nbsp; Здание под снос, реконструкцию
+                                </div>
+                            </div>
+                            <div class="row wooden-structures">
+                                <div class="col-12 construction__flex">
+                                    <div class="checkbox">
+                                        <input name="demolition" type="checkbox" id="payt2" class="button-checkbox"/>
+                                        <label class="button-label" for="payt2">Да</label></label>
+                                    </div>
+                                   &nbsp; &nbsp; &nbsp; <div>Деревянные конструкции <br> здания или перекрытий</div>
+                                </div>
+                            </div>
+                            <div class="row sum-insured">
+                                <p class="heading col-12">Страховая сумма</p>
+                                <div class="col-12">
+                                    <div class="slider-block">
+                                        <div class="slider-value">
+                                            <input type="hidden" name="sum-insured">
+                                            <span class="slider-value__min">100 000 ₽</span>
+                                            <samp class="slider-value__current">100 000 ₽</samp>
+                                            <span class="slider-value__max">10 00 000 ₽</span>
+                                        </div>
+                                        <div class="slider-block__slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row insurance-terms">
+                                <p class="heading col-12">Условия страхования</p>
+                                <div class="col-6 heading__checkbox">
+                                    <div class="row">
+                                        <div class="col-2 heading__checkbox">
+                                            <input type="checkbox" name="heading__checkbox">
+                                            <div class="heading__checkbox__square"></div>
+                                        </div>
+                                        <div class="col-10">
+                                            Риск утраты или повреждения предмета ипотеки
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6  heading__checkbox">
+                                    <div class="row">
+                                        <div class="col-2 heading__checkbox__box">
+                                            <input type="checkbox" name="heading__checkbox">
+                                            <div class="heading__checkbox__square"></div>
+                                        </div>
+                                        <div class="col-10">
+                                            Жизнь, инвалидность I или II группы, утрата трудоспособности
+                                        </div>
+                                    </div>                                     
+                                </div>
+                            </div>
+                            <div class="row borrower">
+                                <p class="heading col-12">Заёмщик (Застрахованный 1)</p>
+                                <div class="col-8">
+                                    <label>
+                                        <span class="label">Фамилия, имя</span>
+                                        <input class="borrower__name" name="fio" type="text" placeholder="Васин Нест Фомич">
+                                    </label>
+                                </div>
+                                <div class="col-4">
+                                    <input class="borrower__date" name="construction" type="date">
+                                </div>
+                            </div>
+                            <div class="row sum-insured-2">
+                                <p class="heading col-12">Страховая сумма на  Заёмщика  (Застрахованный)</p>
+                                <div class="col-12">
+                                    <div class="slider-block">
+                                        <div class="slider-value">
+                                            <input type="hidden" name="sum-insured-2">
+                                            <span class="slider-value__min">100 000 ₽</span>
+                                            <samp class="slider-value__current">100 000 ₽</samp>
+                                            <span class="slider-value__max">7 00 000 ₽</span>
+                                        </div>
+                                        <div class="slider-block__slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row borrower2">
+                                <p class="heading col-12">Заёмщик (Застрахованный 2)</p>
+                                <div class="col-8">
+                                    <label>
+                                        <span class="label">Фамилия, имя</span>
+                                        <input class="borrower2__name" name="fio2" type="text" placeholder="Васин Нест Фомич">
+                                    </label>
+                                </div>
+                                <div class="col-4">
+                                    <input class="borrower2__date" name="construction2" type="date">
+                                </div>
+                            </div>
+                            <div class="row sum-insured-3">
+                                <p class="heading col-12">Страховая сумма на 2 Застрахованного</p>
+                                <div class="col-12">
+                                    <div class="slider-block">
+                                        <div class="slider-value">
+                                            <input type="hidden" name="sum-insured-3">
+                                            <span class="slider-value__min">100 000 ₽</span>
+                                            <samp class="slider-value__current">100 000 ₽</samp>
+                                            <span class="slider-value__max">7 00 000 ₽</span>
+                                        </div>
+                                        <div class="slider-block__slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row promotional">
+                                <div class="col-6">
+                                    <label>
+                                        <span class="label">Есть промокод</span>
+                                        <input class="promotional__number" name="promotional__number" type="text" placeholder="ГОАУ301524">
+                                    </label>
+                                </div>
+                                <div class="col-6">
+                                    <div class="promotional__wrap">
+                                        <button href="" class="promotional__button" type="button">Применить промокод </button>
+                                        <div class="promotional__prompt">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            <button type="submit" class="calc__btn">ОФОРМИТЬ ПОЛИС</button>
+                           
+                        </form>
+                    </div>
+                    <div class="col-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./assets/js/jquery_v2.2.0.js"></script>
+        <script src="./assets/js/jquery.validate.min.js"></script>
+        <script src="./assets/js/jquery-ui.js"></script>
+        <script src="./assets/js/ui-touch.js"></script>
+        <script>
+            (function($){
+                $('.calc').on('change', 'input', function(evt){
+                    /*$.ajax({
+                        url: url,
+                        data: $('.calc').serialize(),
+                        success: function(response) {
+                            let = obj = JSON.parse(response.text)}
+                            $('.total').html(obj);
+                        }  
+                    }); */
+                    console.log(evt);
+                });
+                $('.calc').validate({
+                    rules: {
+                        сreditor: {
+                            required: true,
+                        },
+                        start: {
+                            required: true
+                        },
+                        stop: {
+                            required: true
+                        },
+                        construction: {
+                            required: true
+                        },
+                        borrower_name: {
+                            required: true
+                        },
+                        borrower2_name: {
+                            required: true
+                        },
+                        borrower_date: {
+                            required: true
+                        },
+                        borrower2_date: {
+                            required: true
+                        },
+                        fio: {
+                            required: true
+                        },
+                        fio2: {
+                            required: true
+                        },
+                        construction: {
+                            required: true
+                        },
+                        construction2: {
+                            required: true
+                        }
+                    },
+                    messages:{
+                        сreditor: {
+                            required: 'Введите название кредитной организации',
+                        },
+                        start: {
+                            required: 'Введите дату начала',
+                        },
+                        stop: {
+                            required: 'Введите Дату окончания',
+                        },
+                        construction: {
+                            required: 'Введите год постройки',
+                        },
+                        fio: {
+                            required: 'Укажите коректные  Фамилию Имя Отчество при его наличаи ',
+                        },
+                        fio2: {
+                            required: 'Укажите коректные  Фамилию Имя Отчество при его наличаи ',
+                        },
+                        construction2: {
+                            required: 'Введите год постройки',
+                        },
+                  
+                     
+
+                     
+
+                    },
+                    submitHandler: function(form) {
+                        /*$.ajax({
+                            url: form.action,
+                            type: form.method,
+                            data: $(form).serialize(),
+                            success: function(response) {
+                                let = obj = JSON.parse(response.text)}
+                                $('#total').html(obj);
+                            }            
+                        });*/
+                    }
+                });
+                $('.slider-block__slider').slider({
+                    animate: 'slow',
+                    range: 'min',
+                    min: 100000,
+                    max: 1000000,
+                    stop: function(event, ui) {
+                        let el = $('[name=sum-insured]');
+                        el.prop('value', ui.value);
+                        $('.slider-value__current').text(ui.value + ' ₽');
+                        el.trigger('change');
+
+                    },
+                });
+            })(jQuery);
+            
+
+        </script>
+    </body>
+</html>

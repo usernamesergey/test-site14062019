@@ -1,0 +1,186 @@
+.header{
+    border-bottom: 1px solid #000000;
+}
+.header__nav a{
+    color: #4D4D4D;
+    display: inline-block;
+    margin-right: 35px;
+}
+.header__contacts,.header__nav{
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.header__number{
+    display: block;
+    font-size: 1rem;
+    color: #4d4d4d;
+    line-height: 16px;
+}
+.header__number-text{
+    font-size: 0.85rem;
+    color: #BBBBBB;
+}
+.header__buttons{
+    display: flex;
+    padding: 25px 0;
+}
+.header__search{
+    width: 40px;
+    height: 40px;
+    background: url(../img/header/search.svg) no-repeat center #EBEBEB;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.header__button{
+    background: #EBEBEB;
+    color: #4d4d4d;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    height: 40px;
+}
+.header__button:hover{
+    color: #4d4d4d;
+}
+.breadcrumbs{
+    padding: 20px 0 30px 0;
+}
+.breadcrumbs__item, .breadcrumbs__item:hover{
+    color: #727272;
+}
+h1{
+    margin-top: 0;
+    margin-bottom: 38px;
+    font-weight: normal;
+    font-size: 3.6rem;
+}
+h5{
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 1.7rem;
+}
+.calc__dates{
+    margin-bottom: 40px;
+}
+.calc__label-creditor, .calc__label-insurance{
+    margin-bottom: 10px;
+}
+.calc__input-creditor, .calc__input-insurance{
+    width: 100%;
+}
+.calc__creditor{
+    margin-bottom: 50px;
+}
+.year-construction{
+    margin-bottom: 40px;
+}
+.construction__flex{
+    display: flex;
+    align-items: center;
+}
+.wooden-structures{
+    margin-bottom: 40px;
+}
+.slider-value{
+    display: flex;
+    justify-content: space-between;
+
+}
+.slider-value__min, .slider-value__max{
+    color: #B0B0B0;
+}
+.sum-insured{
+    margin-bottom: 40px;
+}
+.ui-slider-range{
+    background: #93C950;
+    height: 3px !important;
+}
+.ui-widget.ui-widget-content{
+    border: none;
+}
+.ui-slider-handle{
+    border: none;
+    background: #C4C4C4;
+    border-radius: 50%;
+    top: -0.4em !important;
+}
+.ui-slider-handle:focus{
+    border: none;
+    outline: none;
+}
+.insurance-terms{
+    margin-bottom: 40px;
+}
+.heading{
+    margin-bottom: 20px;
+}
+.heading__checkbox{
+    position: relative;
+}
+.heading__checkbox__square{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #93C950;
+    box-sizing: border-box;
+    border-radius: 8px;
+    position: absolute;
+    left: 15px;
+    top: 0;
+}
+.heading__checkbox [type=checkbox]{
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+.heading__checkbox [type=checkbox]:checked + .heading__checkbox__square{
+    background: url(../img/content/ok.svg) no-repeat center /contain
+}
+.borrower, .borrower-2, .sum-insured-3, .promotional{
+    margin-bottom: 40px;
+}
+.borrower label, .borrower2 label{
+    width: 100%;
+}
+.borrower__name, .borrower2__name{
+    max-width: 400px;
+    width: 100%;
+}
+.borrower__date, .borrower2__date{
+    max-width: 245px;
+    width: 100%;
+}
+.sum-insured-2{
+    margin-bottom: 40px;
+}
+.promotional label{
+    width: 100%;
+}
+.promotional__number{
+    max-width: 245px;
+    width: 100%;
+}
+.promotional__button, .promotional__button:focus{
+    border: 1px solid #B0B0B0;
+    outline: none;
+    padding: 15px 20px;
+    background: none;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.promotional__wrap{
+    display: flex;
+    align-items: center;
+}
+.promotional__prompt{
+    width: 17px;
+    height: 17px;
+    background: url(../img/content/i.svg) no-repeat center /contain;
+}
+
